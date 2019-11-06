@@ -5,7 +5,7 @@ This repository tracks [Prusa3D's Slic3r fork](https://github.com/prusa3d/slic3r
 To grab and run this (built on the Docker hub):
 
     docker run -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v $PWD:/Slic3r/3d:z \
+    -v $PWD:/Slic3r/3d:rw \
     -v slic3rSettings:/home/slic3r \
     -e DISPLAY=$DISPLAY \
     --rm keyglitch/docker-slic3r-prusa3d
